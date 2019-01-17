@@ -2,7 +2,7 @@ package com.employeemanagement.model;
 
 public class Employee {
    private int empId;
-    private int empContact;
+    private String empContact;
 	private String empName;
 	private String empAddress;
 	private int salary;
@@ -15,10 +15,10 @@ public class Employee {
 	public void setEmpId(int id) {
 		this.empId = id;
 	}
-	public int getEmpContact() {
+	public String getEmpContact() {
 		return empContact;
 	}
-	public void setEmpContact(int empContact) {
+	public void setEmpContact(String empContact) {
 		this.empContact = empContact;
 	}
 	public String getEmpName() {

@@ -7,7 +7,7 @@
 <body>  
   
 <p>Record successfully saved!</p>  
-<jsp:include page="empform.html"></jsp:include>  
+<jsp:include page="index.jsp"></jsp:include>  
   
 </body>  
 </html>  

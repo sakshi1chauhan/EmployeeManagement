@@ -7,7 +7,8 @@
 </head>
 <body>
 
-<%@page import="com.employee_management.employeeDAOimplementation.EmpDAO,com.employeemanagement.model.*,java.util.*"%>
+<%@page import="com.employee_management.employeeDAOimplementation.EmpDAO,
+                com.employeemanagement.model.*,java.util.*"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <h1>Users List</h1>
@@ -26,7 +27,7 @@ request.setAttribute("list",list);
 	<tr><td>${u.getEmpId()}</td><td>${u.getEmpContact()}</td><td>${u.getEmpName()}</td>
 	    <td>${u.getEmpAddress()}</td>
 	    <td><a href="editform.jsp?id=${u.getEmpId()}">Edit</a></td>
-	    <td><a href="deleteuser.jsp?id=${u.getEmpId()}">Delete</a></td>
+	    <td><a href="deleteemp.jsp?id=${u.getEmpId()}">Delete</a></td>
 	</tr>
 </c:forEach>
 </table>

@@ -8,10 +8,12 @@ public interface EmployeeOperations {
 
 	public int insertDetail(Employee e) ;
 	public List<Employee> showDetails();
-	public int updateDetail(int id);
+	public int updateDetail(Employee e);
 	public int deleteDetail(int id);
 	public List<Employee> findRecord(int id);
-	public void sortRecord();
-	public void countEmpOnProject(int pid);
+	public List<Employee> sortRecord();
+	public List<Employee> countEmpOnProject(Employee e);
+	public int updateSalary(Employee e);
+	public int updateProject(Employee e);
 	
 }

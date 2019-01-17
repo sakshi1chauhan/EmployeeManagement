@@ -4,6 +4,7 @@
 <%  
 String idd=request.getParameter("id");
 int id=Integer.parseInt(idd);
+System.out.println(id);
 EmpDAO ed1=new EmpDAO();
 int status=ed1.deleteDetail(id);  
 if(status==1){
