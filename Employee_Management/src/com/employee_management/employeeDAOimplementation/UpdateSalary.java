@@ -1,3 +1,12 @@
+/*
+ * UpdateSalary 
+ * 
+ * Version 1.0
+ *
+ * 2019-01-16
+ * 
+ * Copyright notice
+ */
 package com.employee_management.employeeDAOimplementation;
 
 import java.io.IOException;
@@ -46,6 +55,8 @@ public class UpdateSalary extends HttpServlet {
 		System.out.println("update succesful");
 		if(status==1){
 			response.sendRedirect("viewemp.jsp");  
+			}else{
+				response.sendRedirect("ERROR.jsp");
 			}
 		
 	}

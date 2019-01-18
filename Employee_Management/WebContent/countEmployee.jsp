@@ -15,7 +15,7 @@ e.setProId(id);
 List<Employee> list=ed1.countEmpOnProject(e);
 request.setAttribute("list",list);
 %>
-<table border="1" width="90%">
+<table border="1" width="25%">
 <tr><th>Name</th></tr>
 <c:forEach items="${list}" var="u">
 	<tr><td>${u.getEmpName()}</td></tr>

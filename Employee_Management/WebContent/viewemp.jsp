@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>View Users</title>
+<title>View Employees</title>
 </head>
 <body>
 
@@ -11,7 +11,7 @@
                 com.employeemanagement.model.*,java.util.*"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<h1>Users List</h1>
+<h1>Employees List</h1>
 
 <%
 EmpDAO ed1=new EmpDAO();
@@ -21,7 +21,7 @@ request.setAttribute("list",list);
 
 <table border="1" width="90%">
 <tr><th>Id</th><th>Contact</th><th>Name</th>
-    <th>Address</th>
+    <th>Address</th><th>Edit</th><th>Delete</th>
 </tr>
 <c:forEach items="${list}" var="u">
 	<tr><td>${u.getEmpId()}</td><td>${u.getEmpContact()}</td><td>${u.getEmpName()}</td>

@@ -13,21 +13,20 @@
 <h1>Search By Id</h1>
 
 <%
+Employee e=new Employee();
 EmpDAO ed1=new EmpDAO();
 String idd=request.getParameter("id");
 int id=Integer.parseInt(idd);
-System.out.println("id to find record="+id);
-List<Employee> list=ed1.findRecord(id);
+e.setEmpId(id);
+List<Employee> list=ed1.findRecord(e);
 request.setAttribute("list",list);
 
 %>
-<table border="1" width="90%">
+<table border="1" width="70%">
 <tr><th>Id</th><th>Contact</th><th>Name</th><th>Address</th>
 </tr>
 <c:forEach items="${list}" var="u">
 	<tr><td>${u.getEmpId()}</td><td>${u.getEmpContact()}</td><td>${u.getEmpName()}</td><td>${u.getEmpAddress()}</td>
-	    <%-- <td><a href="editform.jsp?id=${u.getEmpId()}">Edit</a></td>
-	    <td><a href="deleteemp.jsp?id=${u.getEmpId()}">Delete</a></td> --%>
 	</tr>
 </c:forEach>
 </table>

@@ -14,13 +14,13 @@
 
 <table>
 <tr><td>Id</td><td>  
-<input type="text" name="id" value=" "/></td></tr>   
+<input type="text" name="id" value=" " required/></td></tr>   
 <tr><td>Contact</td><td>  
-<input type="text" name="contact" value=" "/></td></tr>   
+<input type="text" name="contact" value=" " required/></td></tr>   
 <tr><td>Name:</td><td>  
-<input type="text" name="name" value=""/></td></tr>  
+<input type="text" name="name" value="" required/></td></tr>  
 <tr><td>Address</td><td>  
-<input type="text" name="address" value=""/></td></tr>  
+<input type="text" name="address" value="" required/></td></tr>  
  
 <tr><td colspan="2"><input type="submit" value="Edit Employee"/></td></tr>  
 </table>  

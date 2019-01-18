@@ -1,3 +1,12 @@
+/*
+ * Employee1
+ * 
+ * Version 1.0
+ *
+ * 2019-01-16
+ * 
+ * Copyright notice
+ */
 package com.employeemanagement.model;
 
 public class Employee1 {

@@ -1,3 +1,12 @@
+/*
+ * save 
+ * 
+ * Version 1.0
+ *
+ * 2019-01-16
+ * 
+ * Copyright notice
+ */
 package com.employee_management.employeeDAOimplementation;
 
 import java.io.IOException;
@@ -37,7 +46,7 @@ public class Save extends HttpServlet {
 		int id=Integer.parseInt(idd);
 		System.out.println(id);
 		String contact=request.getParameter("contact");
-		
+		System.out.println(id+"**");
 		String name=request.getParameter("name");
 		String address=request.getParameter("address");
 		String sal=request.getParameter("salary");

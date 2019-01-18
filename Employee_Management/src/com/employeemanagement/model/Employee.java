@@ -1,7 +1,16 @@
+/*
+ * Employee 
+ * 
+ * Version 1.0
+ *
+ * 2019-01-16
+ * 
+ * Copyright notice
+ */
 package com.employeemanagement.model;
 
 public class Employee {
-   private int empId;
+    private int empId;
     private String empContact;
 	private String empName;
 	private String empAddress;
