@@ -1,0 +1,16 @@
+
+<div>
+    <h3>Students:</h3>
+    <ul>
+    <li *ngFor="let student of students" >
+       {{student}}
+    </li>
+    </ul>
+    </div>
+    <h4>Enter the student name:  </h4>
+  <input type="text" [(ngModel)]="newStudentName">
+  <br>
+  <br>
+  <button (click)="addStudent()">Add</button>
+  &nbsp;&nbsp;
+  <button (click)="removeStudent()">Delete</button>
